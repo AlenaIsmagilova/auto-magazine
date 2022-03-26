@@ -1,0 +1,7 @@
+.info__button-right {
+  background-image: url(/images/linkImage.svg);
+  width: 12px;
+  height: 12px;
+  @include reset-button;
+  background-color: $secondaryColor;
+}

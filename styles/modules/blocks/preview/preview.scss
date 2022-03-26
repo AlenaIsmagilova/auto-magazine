@@ -1,0 +1,9 @@
+.preview {
+  font-family: $fontFamily;
+  width: $stretchContainer;
+  display: flex;
+  align-items: center;
+  min-width: 1440px;
+  min-height: 840px;
+  border-bottom: $borderBottom;
+}

@@ -1,0 +1,8 @@
+.info__button-left {
+  background-image: url(/images/linkImage.svg);
+  width: 12px;
+  height: 12px;
+  @include reset-button;
+  background-color: $secondaryColor;
+  margin-right: 14px;
+}

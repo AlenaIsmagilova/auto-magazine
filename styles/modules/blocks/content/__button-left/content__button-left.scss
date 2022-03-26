@@ -1,0 +1,8 @@
+.content__button-left {
+  @include reset-button;
+  width: 42px;
+  height: 34px;
+  background-image: url(/images/leftGalleryBtn.svg);
+  background-color: $secondaryColor;
+  margin-right: 30px;
+}

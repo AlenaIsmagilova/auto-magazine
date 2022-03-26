@@ -1,0 +1,8 @@
+.footer__copyright {
+  @include reset-text;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 13px;
+  color: $primaryColor;
+}

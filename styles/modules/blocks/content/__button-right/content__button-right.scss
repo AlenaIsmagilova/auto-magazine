@@ -1,0 +1,7 @@
+.content__button-right {
+  @include reset-button;
+  width: 42px;
+  height: 34px;
+  background-image: url(/images/rightGalleryBtn.svg);
+  background-color: $secondaryColor;
+}

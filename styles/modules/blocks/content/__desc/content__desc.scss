@@ -1,0 +1,12 @@
+.content__desc {
+  min-height: 506px;
+  color: $primaryColor;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 42px;
+  @include reset-text;
+  border-right: $borderRight;
+  padding: 41px 50px 45px;
+  box-sizing: border-box;
+  min-width: 720px;
+}

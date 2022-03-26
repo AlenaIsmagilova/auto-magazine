@@ -1,0 +1,10 @@
+.content__title {
+  @include reset-text;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 37px;
+  color: $primaryColor;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
