@@ -1,16 +1,18 @@
 .preview {
   font-family: $fontFamily;
   width: $stretchContainer;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  min-height: 840px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: max-content max-content;
+  grid-template-areas: "text image" "button image";
   border-bottom: $borderBottom;
+  padding: 150px 0;
 }
 
 @media screen and (max-width: 1439px) {
   .preview {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    padding: 100px 0;
   }
 }

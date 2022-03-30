@@ -1,5 +1,10 @@
 .content__style-wrapper {
   width: 50%;
-  height: 540px;
   overflow: hidden;
+}
+
+@media screen and (max-width: 1439px) {
+  .content__style-wrapper {
+    width: 100%;
+  }
 }

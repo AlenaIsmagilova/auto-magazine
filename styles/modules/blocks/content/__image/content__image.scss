@@ -5,3 +5,10 @@
   display: block;
   box-sizing: border-box;
 }
+
+@media screen and (max-width: 1439px) {
+  .content__image {
+    width: 700px;
+    height: 510px;
+  }
+}

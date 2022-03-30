@@ -14,10 +14,20 @@
   line-height: 60px;
   transition: background-color 1s ease, color 1s ease;
   margin-top: 30px;
+  grid-area: button;
+  justify-self: center;
 }
 
 .preview__button:hover {
   cursor: pointer;
   background-color: $primaryColor;
   color: $secondaryColor;
+}
+
+@media screen and (max-width: 1439px) {
+  .preview__button {
+    order: 3;
+    align-self: center;
+    margin-top: 100px;
+  }
 }

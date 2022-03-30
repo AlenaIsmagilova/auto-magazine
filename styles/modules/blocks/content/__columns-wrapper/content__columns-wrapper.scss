@@ -1,0 +1,11 @@
+.content__columns-wrapper {
+  display: flex;
+  width: 50%;
+}
+
+@media screen and (max-width: 1439px) {
+  .content__columns-wrapper {
+    width: 100%;
+    min-height: 506px;
+  }
+}

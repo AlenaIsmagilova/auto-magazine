@@ -1,5 +1,6 @@
 .preview__image {
-  height: 540px;
+  // height: 540px;
+  grid-area: image;
 }
 
 @media screen and (max-width: 1439px) {
@@ -7,5 +8,8 @@
     height: 510px;
     width: 700px;
     object-fit: cover;
+    order: 2;
+    align-self: center;
+    margin-top: 70px;
   }
 }
