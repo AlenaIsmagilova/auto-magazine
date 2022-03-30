@@ -5,4 +5,10 @@
   background-image: url(/images/leftGalleryBtn.svg);
   background-color: $secondaryColor;
   margin-right: 30px;
+  transition: opacity 1s ease;
+}
+
+.content__button-left:hover {
+  cursor: pointer;
+  opacity: 0.6;
 }

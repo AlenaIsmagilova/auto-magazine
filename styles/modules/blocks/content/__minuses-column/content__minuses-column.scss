@@ -1,5 +1,11 @@
 .content__minuses-column {
-  min-width: 359px;
+  width: 25%;
   padding: 41px 0 0 50px;
   box-sizing: border-box;
+}
+
+@media screen and (max-width: 1439px) {
+  .content__minuses-column {
+    width: 50%;
+  }
 }

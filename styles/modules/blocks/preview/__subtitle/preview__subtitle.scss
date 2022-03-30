@@ -7,3 +7,9 @@
   text-transform: uppercase;
   margin: 0 0 30px;
 }
+
+@media screen and (max-width: 1439px) {
+  .preview__subtitle {
+    margin-top: 100px;
+  }
+}

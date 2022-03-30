@@ -8,5 +8,13 @@
   border-right: $borderRight;
   padding: 41px 50px 45px;
   box-sizing: border-box;
-  min-width: 720px;
+  width: 50%;
+}
+
+@media screen and (max-width: 1439px) {
+  .content__desc {
+    width: 100%;
+    border-bottom: $borderBottom;
+    min-height: 422px;
+  }
 }

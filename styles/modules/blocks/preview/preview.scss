@@ -3,7 +3,14 @@
   width: $stretchContainer;
   display: flex;
   align-items: center;
-  min-width: 1440px;
+  justify-content: space-between;
+  width: 100%;
   min-height: 840px;
   border-bottom: $borderBottom;
+}
+
+@media screen and (max-width: 1439px) {
+  .preview {
+    display: block;
+  }
 }

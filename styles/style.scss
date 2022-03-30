@@ -25,6 +25,7 @@
 @import "./modules/blocks/content/__list/content__list.scss";
 @import "./modules/blocks/content/__item/content__item.scss";
 @import "./modules/blocks/content/__image/content__image.scss";
+@import "./modules/blocks/content/__style-wrapper/content__style-wrapper.scss";
 @import "./modules/blocks/content/__gallery-wrapper/content__gallery-wrapper.scss";
 @import "./modules/blocks/content/__gallery-title/content__gallery-title.scss";
 @import "./modules/blocks/content/__gallery/content__gallery.scss";
@@ -47,3 +48,9 @@
 @import "./modules/blocks/footer/__text/footer__text.scss";
 @import "./modules/blocks/footer/__copyright/footer__copyright.scss";
 @import "./modules/blocks/footer/__copyright-column/footer__copyright-column.scss";
+@import "./modules/blocks/footer/__form/footer__form.scss";
+@import "./modules/blocks/footer/__form-input-name/footer__form-input-name.scss";
+@import "./modules/blocks/footer/__form-wrapper/footer__form-wrapper.scss";
+@import "./modules/blocks/footer/__form-input-email/footer__form-input-email.scss";
+@import "./modules/blocks/footer/__form-button/footer__form-button.scss";
+@import "./modules/blocks/humburger-menu/humburger-menu.scss";

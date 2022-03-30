@@ -4,4 +4,11 @@
   height: 34px;
   background-image: url(/images/rightGalleryBtn.svg);
   background-color: $secondaryColor;
+  transition: opacity 1s ease;
+  background-size: cover;
+}
+
+.content__button-right:hover {
+  cursor: pointer;
+  opacity: 0.6;
 }

@@ -11,17 +11,23 @@
     <header class="header">
       <ul class="header__list">
         <li class="header__item">
-          <a href="#" class="header__link">Факты</a>
+          <a href="#facts" class="header__link">Факты</a>
         </li>
         <li class="header__item">
-          <a href="#" class="header__link">Галерея</a>
+          <a href="#gallery" class="header__link">Галерея</a>
         </li>
         <li class="header__item">
-          <a href="#" class="header__link">Пресса</a>
+          <a href="#info" class="header__link">Пресса</a>
         </li>
       </ul>
       <img src="./images/AUTO-MAGAZINE.png" alt="логотип" class="logo" />
     </header>
+    <div class="humburger-menu">
+      <img src="./images/AUTO-MAGAZINE.png" alt="логотип" class="logo" />
+      <button class="humburger-menu__button">
+        <img class="humburger-menu__button" src="" alt="" />
+      </button>
+    </div>
     <nav class="preview">
       <div class="preview__container">
         <h2 class="preview__subtitle">volkswagen T1</h2>
@@ -32,6 +38,7 @@
       <img src="./images/retroBus.png" alt="retro-bus" class="preview__image" />
     </nav>
     <main class="content">
+      <a name="facts"></a>
       <div class="content__wrapper">
         <p class="content__desc">
           VW&nbsp;T1&nbsp;Electro: Отделение Volkswagen Commercial Vehicles
@@ -58,22 +65,25 @@
         </div>
       </div>
       <div class="content__gallery">
-        <div class="content__gallery-container">
-          <img
-            src="./images/galleryPhoto1.png"
-            alt="Ретро-автобус с высоты"
-            class="content__image"
-          />
-          <img
-            src="./images/insideAutoFront.png"
-            alt="Ретро-автобус с высоты"
-            class="content__image"
-          />
-          <img
-            src="./images/insideAutoBack.png"
-            alt="Ретро-автобус с высоты"
-            class="content__image"
-          />
+        <a name="gallery"></a>
+        <div class="content__style-wrapper">
+          <div class="content__gallery-container">
+            <img
+              src="./images/galleryPhoto1.png"
+              alt="Ретро-автобус с высоты"
+              class="content__image"
+            />
+            <img
+              src="./images/insideAutoFront.png"
+              alt="Ретро-автобус с высоты"
+              class="content__image"
+            />
+            <img
+              src="./images/insideAutoBack.png"
+              alt="Ретро-автобус с высоты"
+              class="content__image"
+            />
+          </div>
         </div>
         <div class="content__gallery-wrapper">
           <h2 class="content__gallery-title">Галерея</h2>
@@ -84,6 +94,7 @@
         </div>
       </div>
       <section class="info">
+        <a name="info"></a>
         <div class="info__first-column">
           <h2 class="info__title">Пресса</h2>
         </div>
@@ -114,10 +125,29 @@
         <h2 class="footer__title">Подписка</h2>
         <p class="footer__text">На новые спецвыпуски машин.</p>
         <form action="" class="footer__form">
-          <input type="text" name="firstname" placeholder="Имя" />
-          <input type="text" name="secondname" placeholder="Фамилия" />
-          <input type="email" name="email" placeholder="Почта" />
-          <button type="submit">подписка</button>
+          <div class="footer__form-wrapper">
+            <input
+              class="footer__form-input-name"
+              type="text"
+              name="firstname"
+              placeholder="Имя"
+            />
+            <input
+              class="footer__form-input-name"
+              type="text"
+              name="secondname"
+              placeholder="Фамилия"
+            />
+          </div>
+          <div class="footer__form-wrapper">
+            <input
+              class="footer__form-input-email"
+              type="email"
+              name="email"
+              placeholder="Почта"
+            />
+            <button class="footer__form-button" type="submit">подписка</button>
+          </div>
         </form>
       </div>
       <div class="footer__copyright-column">
@@ -125,5 +155,6 @@
         <p class="footer__copyright">© Auto-Magazine 2021</p>
       </div>
     </footer>
+    <script src="./scripts/index.js"></script>
   </body>
 </html>
