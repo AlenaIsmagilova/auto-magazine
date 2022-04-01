@@ -8,3 +8,9 @@
     width: 100%;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .content__style-wrapper {
+    min-width: 280px;
+  }
+}

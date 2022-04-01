@@ -5,3 +5,10 @@
   line-height: 46px;
   color: $primaryColor;
 }
+
+@media screen and (max-width: 767px) {
+  .content__gallery-title {
+    font-size: 26px;
+    line-height: 26px;
+  }
+}

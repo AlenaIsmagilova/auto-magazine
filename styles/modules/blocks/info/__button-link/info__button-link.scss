@@ -18,3 +18,11 @@
   background-color: $primaryColor;
   color: $secondaryColor;
 }
+
+@media screen and (max-width: 767px) {
+  .info__button-link {
+    width: 88px;
+    height: 42px;
+    font-size: 14px;
+  }
+}

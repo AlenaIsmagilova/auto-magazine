@@ -1,0 +1,25 @@
+.humburger-menu__header {
+  display: none;
+  font-family: $fontFamily;
+  width: $stretchContainer;
+  min-height: 70px;
+  border-bottom: $borderBottom;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 1439px) {
+  .humburger-menu__header {
+    display: none;
+    border-bottom: $borderBottom;
+    justify-content: space-between;
+    align-items: center;
+    padding: 27px 27px 27px 34px;
+    max-height: 70px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .humburger-menu__header {
+    padding: 27px 15px 27px 20px;
+  }
+}

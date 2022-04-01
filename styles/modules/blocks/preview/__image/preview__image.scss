@@ -13,3 +13,11 @@
     margin-top: 70px;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .preview__image {
+    margin-top: 34px;
+    height: 202px;
+    width: 280px;
+  }
+}

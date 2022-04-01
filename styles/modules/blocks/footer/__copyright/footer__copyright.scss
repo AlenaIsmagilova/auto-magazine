@@ -6,3 +6,9 @@
   line-height: 13px;
   color: $primaryColor;
 }
+
+@media screen and (max-width: 767px) {
+  .footer__copyright {
+    padding: 20px 0 0 12px;
+  }
+}

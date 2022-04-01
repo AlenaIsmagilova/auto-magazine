@@ -7,7 +7,10 @@
 @import "./modules/blocks/page/page.scss";
 @import "./modules/blocks/header/header.scss";
 @import "./modules/blocks/logo/logo.scss";
+@import "./modules/blocks/logo/_opened/logo_opened.scss";
+@import "./modules/blocks/logo/_place/logo_place_footer.scss";
 @import "./modules/blocks/header/__list/header__list.scss";
+@import "./modules/blocks/header/__list/_opened/header__list_opened.scss";
 @import "./modules/blocks/header/__item/header__item.scss";
 @import "./modules/blocks/header/__link/header__link.scss";
 @import "./modules/blocks/preview/preview.scss";
@@ -19,6 +22,7 @@
 @import "./modules/blocks/content/content.scss";
 @import "./modules/blocks/content/__desc/content__desc.scss";
 @import "./modules/blocks/content/__wrapper/content__wrapper.scss";
+@import "./modules/blocks/content/__columns-wrapper/content__columns-wrapper.scss";
 @import "./modules/blocks/content/__pluses-column/content__pluses-column.scss";
 @import "./modules/blocks/content/__minuses-column/content__minuses-column.scss";
 @import "./modules/blocks/content/__title/content__title.scss";
@@ -30,6 +34,7 @@
 @import "./modules/blocks/content/__gallery-title/content__gallery-title.scss";
 @import "./modules/blocks/content/__gallery/content__gallery.scss";
 @import "./modules/blocks/content/__gallery-container/content__gallery-container.scss";
+@import "./modules/blocks/content/__gallery-image-wrapper/content__gallery-image-wrapper.scss";
 @import "./modules/blocks/content/__button-left/content__button-left.scss";
 @import "./modules/blocks/content/__button-right/content__button-right.scss";
 @import "./modules/blocks/content/__button-wrapper/content__button-wrapper.scss";
@@ -54,4 +59,7 @@
 @import "./modules/blocks/footer/__form-input-email/footer__form-input-email.scss";
 @import "./modules/blocks/footer/__form-button/footer__form-button.scss";
 @import "./modules/blocks/humburger-menu/humburger-menu.scss";
-@import "./modules/blocks/content/__columns-wrapper/content__columns-wrapper.scss";
+@import "./modules/blocks/humburger-menu/__header/humburger-menu__header.scss";
+@import "./modules/blocks/humburger-menu/__button/humburger-menu__button.scss";
+@import "./modules/blocks/humburger-menu/__wrapper/humburger-menu__wrapper.scss";
+@import "./modules/blocks/humburger-menu/__button/_opened/humburger-menu__button_opened.scss";

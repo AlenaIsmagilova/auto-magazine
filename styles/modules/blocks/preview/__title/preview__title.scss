@@ -6,3 +6,11 @@
   color: $primaryColor;
   margin: 0 0 51px;
 }
+
+@media screen and (max-width: 767px) {
+  .preview__title {
+    font-size: 38px;
+    line-height: 50px;
+    margin: 0 0 30px;
+  }
+}
