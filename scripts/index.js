@@ -8,12 +8,10 @@ const humburgerMenu = document.querySelector(".humburger_menu");
 
 function goForward() {
   const value = galleryContainer.style.getPropertyValue("transform");
-  if (value === "translateX(0)") {
+  if (value === "translateX(0px)") {
     galleryContainer.style.setProperty("transform", "translateX(-33.33%)");
   } else if (value === "translateX(-33.33%)") {
     galleryContainer.style.setProperty("transform", "translateX(-66.66%)");
-  } else if (value === "translateX(-66.66%)") {
-    galleryContainer.style.setProperty("transform", "translateX(-100%)");
   } else if (value === "translateX(-100%)") {
     return;
   }
@@ -26,8 +24,8 @@ function goBack() {
   } else if (value === "translateX(-66.66%)") {
     galleryContainer.style.setProperty("transform", "translateX(-33.33%)");
   } else if (value === "translateX(-33.33%)") {
-    galleryContainer.style.setProperty("transform", "translateX(0)");
-  } else if (value === "translateX(0)") {
+    galleryContainer.style.setProperty("transform", "translateX(0px)");
+  } else if (value === "translateX(0px)") {
     return;
   }
 }
