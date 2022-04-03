@@ -21,28 +21,9 @@
         </li>
       </ul>
       <img src="./images/AUTO-MAGAZINE.png" alt="логотип" class="logo" />
+      <button class="header__button" type="button"></button>
+      <button class="header__button-closed" type="button"></button>
     </header>
-    <div class="humburger-menu">
-      <img src="./images/AUTO-MAGAZINE.png" alt="логотип" class="logo" />
-      <button class="humburger-menu__button" type="button"></button>
-    </div>
-    <div class="humburger-menu__header">
-      <ul class="header__list header__list_opened">
-        <li class="header__item">
-          <a href="#facts" class="header__link">Факты</a>
-        </li>
-        <li class="header__item">
-          <a href="#gallery" class="header__link">Галерея</a>
-        </li>
-        <li class="header__item">
-          <a href="#info" class="header__link">Пресса</a>
-        </li>
-      </ul>
-      <button
-        class="humburger-menu__button humburger-menu__button_opened"
-        type="button"
-      ></button>
-    </div>
     <nav class="preview">
       <div class="preview__container">
         <h2 class="preview__subtitle">volkswagen T1</h2>
@@ -128,16 +109,20 @@
           </p>
           <div class="info__button-wrapper">
             <div class="info__button-gallery">
-              <button class="info__button-left"></button>
-              <button class="info__button-right"></button>
+              <button
+                class="info__button info__button_active"
+                id="left-button"
+              ></button>
+              <button class="info__button" id="right-button"></button>
             </div>
 
-            <button class="info__button-link">
+            <button class="info__button-link" type="button">
               <a
-                class="info__button"
+                class="info__button-anchor"
                 href="https://www.engadget.com/2020-03-20-vw-unveils-e-bulli-t1-electric-conversion.html"
-              ></a
-              >Читать
+                target="_blank"
+                >Читать</a
+              >
             </button>
           </div>
         </div>
@@ -151,12 +136,14 @@
           <div class="footer__form-wrapper">
             <input
               class="footer__form-input-name"
+              id="inputFirstName"
               type="text"
               name="firstname"
               placeholder="Имя"
             />
             <input
               class="footer__form-input-name"
+              id="inputSecondName"
               type="text"
               name="secondname"
               placeholder="Фамилия"
@@ -165,6 +152,7 @@
           <div class="footer__form-wrapper">
             <input
               class="footer__form-input-email"
+              id="inputEmail"
               type="email"
               name="email"
               placeholder="Почта"
