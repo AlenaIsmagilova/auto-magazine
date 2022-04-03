@@ -7,12 +7,21 @@ const humburgerMenu = document.querySelector(".humburger_menu");
 7;
 
 galleryButtonForward.addEventListener("click", () => {
-  galleryContainer.style.setProperty("transform", "translateX(-100%)");
+  galleryContainer.style.setProperty("transform", "translateX(-33.33%)");
+  console.log(getPropertyValue("transform"));
 });
 
 galleryButtonBack.addEventListener("click", () => {
   galleryContainer.style.setProperty("transform", "translateX(0)");
 });
+
+function rotateImage() {
+  const value = galleryContainer.style.getPropertyValue("transform");
+  if (value === "translateX(-33.33%)") {
+    galleryContainer.style.setProperty("transform", "translateX(-66.66%)");
+  }
+}
+rotateImage();
 
 //burger-button
 const humburgerButton = document.querySelector(".header__button");
@@ -80,8 +89,7 @@ const inputFirstName = document.querySelector("#inputFirstName");
 const inputSecondname = document.querySelector("#inputSecondName");
 const inputEmail = document.querySelector("#inputEmail");
 const footerFormButton = document.querySelector(".footer__form-button");
-
-inputFirstName.addEventListener("input", () => {
+const formActive = () => {
   if (
     inputFirstName.value.length === 0 ||
     inputSecondname.value.length === 0 ||
@@ -91,28 +99,10 @@ inputFirstName.addEventListener("input", () => {
   } else {
     footerFormButton.textContent = "Готово!";
   }
-});
+};
 
-inputSecondname.addEventListener("input", () => {
-  if (
-    inputFirstName.value.length === 0 ||
-    inputSecondname.value.length === 0 ||
-    inputEmail.value.length === 0
-  ) {
-    footerFormButton.textContent = "Подписка";
-  } else {
-    footerFormButton.textContent = "Готово!";
-  }
-});
+inputFirstName.addEventListener("input", formActive);
 
-inputEmail.addEventListener("input", () => {
-  if (
-    inputFirstName.value.length === 0 ||
-    inputSecondname.value.length === 0 ||
-    inputEmail.value.length === 0
-  ) {
-    footerFormButton.textContent = "Подписка";
-  } else {
-    footerFormButton.textContent = "Готово!";
-  }
-});
+inputSecondname.addEventListener("input", formActive);
+
+inputEmail.addEventListener("input", formActive);

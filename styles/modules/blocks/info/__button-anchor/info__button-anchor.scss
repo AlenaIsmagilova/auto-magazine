@@ -7,6 +7,12 @@
   background-color: $secondaryColor;
   text-decoration: none;
   transition: background-color 1s ease, color 1s ease;
+  border-radius: 100px / 50px;
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #e1fd2c;
 }
 
 .info__button-anchor:hover {

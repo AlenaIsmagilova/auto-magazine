@@ -450,6 +450,7 @@
 .content__gallery-container {
   display: flex;
   width: 300%;
+  transform: translateX();
 }
 
 @media screen and (max-width: 1439px) {
@@ -531,6 +532,12 @@
   background-color: #191d2c;
   text-decoration: none;
   transition: background-color 1s ease, color 1s ease;
+  border-radius: 100px/50px;
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #e1fd2c;
 }
 
 .info__button-anchor:hover {
@@ -618,7 +625,6 @@
   width: 110px;
   height: 52px;
   border-radius: 100px/50px;
-  border: 1px solid #e1fd2c;
 }
 
 .info__button-link:hover {
