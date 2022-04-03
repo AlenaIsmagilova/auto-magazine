@@ -6,22 +6,35 @@ const humburgerMenuButton = document.querySelector(".humburger-menu__button");
 const humburgerMenu = document.querySelector(".humburger_menu");
 7;
 
-galleryButtonForward.addEventListener("click", () => {
-  galleryContainer.style.setProperty("transform", "translateX(-33.33%)");
-  console.log(getPropertyValue("transform"));
-});
-
-galleryButtonBack.addEventListener("click", () => {
-  galleryContainer.style.setProperty("transform", "translateX(0)");
-});
-
-function rotateImage() {
+function goForward() {
   const value = galleryContainer.style.getPropertyValue("transform");
-  if (value === "translateX(-33.33%)") {
+  if (value === "translateX(0)") {
+    galleryContainer.style.setProperty("transform", "translateX(-33.33%)");
+  } else if (value === "translateX(-33.33%)") {
     galleryContainer.style.setProperty("transform", "translateX(-66.66%)");
+  } else if (value === "translateX(-66.66%)") {
+    galleryContainer.style.setProperty("transform", "translateX(-100%)");
+  } else if (value === "translateX(-100%)") {
+    return;
   }
 }
-rotateImage();
+
+function goBack() {
+  const value = galleryContainer.style.getPropertyValue("transform");
+  if (value === "translateX(-100%)") {
+    galleryContainer.style.setProperty("transform", "translateX(-66.66%)");
+  } else if (value === "translateX(-66.66%)") {
+    galleryContainer.style.setProperty("transform", "translateX(-33.33%)");
+  } else if (value === "translateX(-33.33%)") {
+    galleryContainer.style.setProperty("transform", "translateX(0)");
+  } else if (value === "translateX(0)") {
+    return;
+  }
+}
+
+galleryButtonForward.addEventListener("click", goForward);
+
+galleryButtonBack.addEventListener("click", goBack);
 
 //burger-button
 const humburgerButton = document.querySelector(".header__button");
