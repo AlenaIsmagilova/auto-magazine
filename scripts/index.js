@@ -4,7 +4,19 @@ const galleryButtonForward = document.querySelector(".content__button-right");
 const galleryContainer = document.querySelector(".content__gallery-container");
 const humburgerMenuButton = document.querySelector(".humburger-menu__button");
 const humburgerMenu = document.querySelector(".humburger_menu");
-7;
+const humburgerButton = document.querySelector(".header__button");
+const closedButton = document.querySelector(".header__button-closed");
+const navList = document.querySelector(".header__list");
+const logo = document.querySelector(".logo");
+const header = document.querySelector(".header");
+const leftButton = document.querySelector("#left-button");
+const rightButton = document.querySelector("#right-button");
+const excerptText = document.querySelector(".info__excerpt");
+const anchor = document.querySelector(".info__button-anchor");
+const inputFirstName = document.querySelector("#inputFirstName");
+const inputSecondname = document.querySelector("#inputSecondName");
+const inputEmail = document.querySelector("#inputEmail");
+const footerFormButton = document.querySelector(".footer__form-button");
 
 function goForward() {
   const value = galleryContainer.style.getPropertyValue("transform");
@@ -30,16 +42,23 @@ function goBack() {
   }
 }
 
+const formActive = () => {
+  if (
+    inputFirstName.value.length === 0 ||
+    inputSecondname.value.length === 0 ||
+    inputEmail.value.length === 0
+  ) {
+    footerFormButton.textContent = "Подписка";
+  } else {
+    footerFormButton.textContent = "Готово!";
+  }
+};
+
 galleryButtonForward.addEventListener("click", goForward);
 
 galleryButtonBack.addEventListener("click", goBack);
 
 //burger-button
-const humburgerButton = document.querySelector(".header__button");
-const closedButton = document.querySelector(".header__button-closed");
-const navList = document.querySelector(".header__list");
-const logo = document.querySelector(".logo");
-const header = document.querySelector(".header");
 
 humburgerButton.addEventListener("click", () => {
   header.classList.add("header_opened");
@@ -60,10 +79,6 @@ closedButton.addEventListener("click", () => {
 });
 
 // press
-const leftButton = document.querySelector("#left-button");
-const rightButton = document.querySelector("#right-button");
-const excerptText = document.querySelector(".info__excerpt");
-const anchor = document.querySelector(".info__button-anchor");
 
 leftButton.addEventListener("click", () => {
   if (leftButton.classList.contains("info__button_active")) {
@@ -96,21 +111,6 @@ rightButton.addEventListener("click", () => {
 });
 
 // form
-const inputFirstName = document.querySelector("#inputFirstName");
-const inputSecondname = document.querySelector("#inputSecondName");
-const inputEmail = document.querySelector("#inputEmail");
-const footerFormButton = document.querySelector(".footer__form-button");
-const formActive = () => {
-  if (
-    inputFirstName.value.length === 0 ||
-    inputSecondname.value.length === 0 ||
-    inputEmail.value.length === 0
-  ) {
-    footerFormButton.textContent = "Подписка";
-  } else {
-    footerFormButton.textContent = "Готово!";
-  }
-};
 
 inputFirstName.addEventListener("input", formActive);
 
